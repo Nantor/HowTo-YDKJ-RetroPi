@@ -1,0 +1,3 @@
+# How to install and configure "You don't know Jack" on RetropPi (Linux-Distribution). (WIP)
+
+This is a guid, that explain...

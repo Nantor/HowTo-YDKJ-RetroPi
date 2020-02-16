@@ -1,0 +1,9 @@
+Exiting and restarting Windows
+
+Here are two small utilities for control of Windows from a shortcut.
+
+ExitWin.exe performs the same job as the Shutdown dialog. It accepts a single upper-case parameter that determines its operation:
+
+    DOS - exists to the MS-DOS prompt
+    RESTART - restarts Windows
+    REBOOT - reboots the computer 

@@ -1,0 +1,153 @@
+How to restore a previous version of Windows display drivers
+Ricky Chang, S3 Technical Support 
+01/05/94
+
+This document describes the procedure in which you can use to restore from
+a previous version of the Windows display driver.  Since the drivers in this
+end-user BBS are intended for generic S3 based video cards, it is imperative 
+that your current driver is saved in case you encounter difficulties.  
+
+A.  To determine which S3 video chipset is equipped in your video card or
+    system, please follow the procedure listed below.
+
+    1.  Consult the owner's manual that was supplied by your video card or
+	system.
+
+    OR
+
+    2.  In any DOS prompt, run the Microsoft diagnostic utility that comes
+	with DOS called MSD.  Click on the video button and take note of the
+	chipset number.  This number should start with 86C.
+
+    OR
+    
+    3.  Call the manufacturer's technical support department on how to 
+	identify the S3 video chipset in your PC.
+
+B.  If the drivers that you are currently using came in floppies with the
+    video card, and you still have them, then you can skip the save and go straight to the restore 
+    section in C.
+
+C.  Otherwise, please following the procedure listed below to create the
+    necessary backup floppy.
+
+    1.  Create a blank & formatted 3.5" or 5.25" floppy.  
+
+    2.  Copy the system.ini file from your Windows sub-directory to the 
+	floppy.  All examples below assume the floppy is in drive A: and 
+	that Windows files are in a directory called Windows on drive C: 
+
+	For example:  copy c:\windows\system.ini a:
+
+    3.  Copy all the following files from the \windows\system sub-directory
+	to the floppy.  
+
+	For 86C911/924, copy the following files: 
+	
+	CAR6515.DRV
+	CAR6416.DRV
+	CAR800.DRV
+	CAR8004.DRV
+	CAR1K.DRV
+	CAR1K4.DRV
+	S3_24.DRV
+	CAR1280.DRV
+	CAR645K.DRV
+	CSW12896.DRV
+	CSW12810.DRV
+	VDDCAR.386
+	CARVGA.2GR
+	CARVGA.3GR
+	CARVGA.GR2
+	CARVGA.GR3
+
+	For 86C801/805, copy the following files: 
+	
+	S3FLAT.DRV
+	S3_24.DRV
+	VDDS3.386
+	VDDS3911.386
+	S3911GRB.3GR
+	VGACOLOR.2GR
+	S3VGA.3GR
+	S3VGA.2GR
+
+	For 86C928, copy the following files: 
+	
+	S3FLAT.DRV
+	S3_24.DRV
+	VDDS3.386
+	VDDS3911.386
+	S3911GRB.3GR
+	VGACOLOR.2GR
+	S3VGA.3GR
+	S3VGA.2GR
+	928E_BT.EXE  (You may not have this file)
+
+	For Vision864, copy the following files: 
+	
+	S3VSND24.DRV
+	S3VSND.DRV
+	S3VSND4.DRV
+	VDDS3.386
+	VDDS3VSN.386
+	S3911GRB.3GR
+	VGACOLOR.2GR
+	S3VGA.3GR
+	S3VGA.2GR
+
+	For Vision946, copy the following files: 
+	
+	S3VSNV.DRV
+	S3VSNV4.DRV
+	S3911GRB.3GR
+	VGACOLOR.2GR
+	VDDS3VSN.386
+
+	For Trio64/32, copy the following files:
+
+	S3TRIO32.DRV
+	S3TRIO.DRV
+	S3VSND24.DRV
+	S3911GRB.3GR
+	VGACOLOR.2GR
+	S3VGA.3GR
+	S3VGA.2GR
+	VDDS3.386
+	VDDS3764.386
+
+	After you have all the files copied onto a floppy, you are done.  
+	Please place the floppy in a safe place.
+
+D.  To restore a driver from you board or system manufacturer's original 
+    disk, follow the directions supplied with the disk.   
+
+E.  If you need to restore the driver from the floppy that was created 
+    previously, please follow the steps listed below.  All examples below 
+    assume the floppy is in drive A: and that Windows files are in a 
+    directory called Windows on drive C: 
+
+    1.  From the floppy, copy the file system.ini to your windows directory.
+	
+	For example: 
+
+	copy a:\system.ini c:\windows
+
+	{enter yes when DOS asks you replace the original file}
+
+     2. Copy the remanding files onto the \windows\system sub-directory.
+
+	For example,
+
+	copy a:\*.drv c:\windows\system
+	copy a:\*.386 c:\windows\system
+	copy a:\*.??r c:\windows\system
+	copy a:\*.exe c:\windows\system  {this is for 928 only}
+
+    This should conclude the restoration process.  
+	
+
+	
+	
+
+	

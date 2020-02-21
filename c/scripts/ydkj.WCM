@@ -1,0 +1,6 @@
+C:\YDKJ\YDKJ16.EXE
+DELAY(1000)
+title = GETAPPACTIVE()
+WHILE GETAPPACTIVE() = title
+	DELAY(10000)
+C:\tools\exitwin.exe DOS

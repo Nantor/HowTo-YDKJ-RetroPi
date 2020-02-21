@@ -1,0 +1,19 @@
+--- c/WINDOWS/WIN.INI
++++ c/WINDOWS/WIN.INI
+@@ -1,7 +1,7 @@
+ [windows]
+ spooler=yes
+ load=
+-run=
++run=C:\scripts\ydkj.WCM
+ Beep=yes
+ NullPort=None
+ device=
+@@ -34,6 +34,7 @@
+ wri=write.exe ^.wri
+ rec=recorder.exe ^.rec
+ hlp=winhelp.exe ^.hlp
++wcm=C:\tools\WINCMD.EXE ^.wcm
+ 
+ [intl]
+ sLanguage=deu

@@ -12,3 +12,6 @@ c/CONFIG.SYS
 *.zip
 You dont know Jack.sh
 YDKJ.conf
+
+# IDE
+/.idea/

@@ -265,6 +265,14 @@ $DOSBOX -conf "$CURRENT/YDKJ.conf"-c "exit" >> "\$LOG" 2>&1
 
 EOF
 
+if $UPDATE; then
+    cat >> "$RUN_SCRIPT" << EOF
+# restore intro file
+python3 "$CURRENT/update/YDKJ-setup.py" $UPDATE --original "$C/YDKJ" >> "\$LOG" 2>&1
+
+EOF
+fi
+
 if [ -n $BUZZ ]; then
     cat >> "$RUN_SCRIPT" << EOF
 # stop the Buzz controller mapper

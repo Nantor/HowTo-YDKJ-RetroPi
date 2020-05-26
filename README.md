@@ -25,7 +25,7 @@ This are the basic steps to do it:
 
 ## Preparation
 
-Before starting the installation process, a valid installation files for _Windows 3.1/3.11_ and _You don't know Jack_ are needed. This will shipt with this guide.
+Before starting the installation process, a valid installation files for _Windows 3.1/3.11_ and _You don't know Jack_ are needed. This files will not shiped with this guide.
 
 ## Semiautomatically installation
 

@@ -1,4 +1,4 @@
-# How to install and configure "You don't know Jack" on RetropPi (Raspberry Pi). (WIP)
+# How to install and configure "You don't know Jack" on RetropPi (Raspberry Pi).
 
 This is a guid, that explain how to install the game _You don't know Jack_ on RetroPi (Raspberry Pi).
 This also include to configure the special intros and setup the use of the buzzers from the game _Buzz_.
